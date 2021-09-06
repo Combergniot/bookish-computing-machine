@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.empik</groupId>
-    <artifactId>github-api</artifactId>dollophead
+    <artifactId>github-api</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>github-api</name>
     <description>github-api</description>
