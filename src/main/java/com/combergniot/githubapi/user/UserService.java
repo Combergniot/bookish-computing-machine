@@ -1,12 +1,12 @@
-package com.empik.githubapi.user;
+package com.combergniot.githubapi.user;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
-import com.empik.githubapi.infrastructure.GithubProvider;
-import com.empik.githubapi.user.dto.UserInfoDto;
-import com.empik.githubapi.user.dto.UserProfileSnapshot;
-import com.empik.githubapi.user.exception.UserNotFoundException;
+import com.combergniot.githubapi.infrastructure.GithubProvider;
+import com.combergniot.githubapi.user.dto.UserProfileSnapshot;
+import com.combergniot.githubapi.user.exception.UserNotFoundException;
+import com.combergniot.githubapi.user.dto.UserInfoDto;
 import org.springframework.stereotype.Service;
 
 @Service

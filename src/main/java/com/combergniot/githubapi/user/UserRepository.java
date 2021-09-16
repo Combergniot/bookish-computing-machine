@@ -1,4 +1,4 @@
-package com.empik.githubapi.user;
+package com.combergniot.githubapi.user;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

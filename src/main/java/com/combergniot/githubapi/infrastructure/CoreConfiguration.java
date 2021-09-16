@@ -1,4 +1,4 @@
-package com.empik.githubapi.infrastructure;
+package com.combergniot.githubapi.infrastructure;
 
 import java.time.Duration;
 

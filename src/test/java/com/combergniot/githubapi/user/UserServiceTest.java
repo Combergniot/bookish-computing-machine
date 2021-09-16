@@ -1,12 +1,12 @@
-package com.empik.githubapi.user;
+package com.combergniot.githubapi.user;
 
 import static org.mockito.BDDMockito.given;
 import static org.mockito.BDDMockito.then;
 
-import com.empik.githubapi.infrastructure.GithubProvider;
-import com.empik.githubapi.user.dto.UserInfoDto;
-import com.empik.githubapi.user.dto.UserProfileSnapshot;
-import com.empik.githubapi.user.exception.UserNotFoundException;
+import com.combergniot.githubapi.user.exception.UserNotFoundException;
+import com.combergniot.githubapi.infrastructure.GithubProvider;
+import com.combergniot.githubapi.user.dto.UserInfoDto;
+import com.combergniot.githubapi.user.dto.UserProfileSnapshot;
 import org.assertj.core.api.BDDSoftAssertions;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -57,9 +57,7 @@ class UserServiceTest {
         given(githubProvider.getUserInfo(LOGIN)).willReturn(userProfileSnapshot);
         //when
         //then
-        Assertions.assertThrows(UserNotFoundException.class, () -> {
-            userService.getUserInfo(LOGIN);
-        });
+        Assertions.assertThrows(UserNotFoundException.class, () -> userService.getUserInfo(LOGIN));
     }
 
     @Test

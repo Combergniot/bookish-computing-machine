@@ -1,4 +1,4 @@
-package com.empik.githubapi.user.exception;
+package com.combergniot.githubapi.user.exception;
 
 public class UserNotFoundException extends RuntimeException{
 

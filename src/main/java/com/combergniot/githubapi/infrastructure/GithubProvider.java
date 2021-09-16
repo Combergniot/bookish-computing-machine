@@ -1,6 +1,6 @@
-package com.empik.githubapi.infrastructure;
+package com.combergniot.githubapi.infrastructure;
 
-import com.empik.githubapi.user.dto.UserProfileSnapshot;
+import com.combergniot.githubapi.user.dto.UserProfileSnapshot;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;

@@ -1,4 +1,4 @@
-package com.empik.githubapi.user;
+package com.combergniot.githubapi.user;
 
 import java.util.Objects;
 import javax.persistence.Entity;

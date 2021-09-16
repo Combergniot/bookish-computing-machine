@@ -1,4 +1,4 @@
-package com.empik.githubapi.user.dto;
+package com.combergniot.githubapi.user.dto;
 
 import java.util.Date;
 

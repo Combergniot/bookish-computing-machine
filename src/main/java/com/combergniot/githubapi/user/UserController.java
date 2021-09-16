@@ -1,7 +1,7 @@
-package com.empik.githubapi.user;
+package com.combergniot.githubapi.user;
 
-import com.empik.githubapi.user.dto.UserInfoDto;
-import com.empik.githubapi.user.dto.UserProfileSnapshot;
+import com.combergniot.githubapi.user.dto.UserProfileSnapshot;
+import com.combergniot.githubapi.user.dto.UserInfoDto;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

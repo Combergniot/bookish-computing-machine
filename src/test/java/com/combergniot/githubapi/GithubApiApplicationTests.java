@@ -1,4 +1,4 @@
-package com.empik.githubapi;
+package com.combergniot.githubapi;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

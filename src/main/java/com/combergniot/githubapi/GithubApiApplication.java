@@ -1,4 +1,4 @@
-package com.empik.githubapi;
+package com.combergniot.githubapi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
