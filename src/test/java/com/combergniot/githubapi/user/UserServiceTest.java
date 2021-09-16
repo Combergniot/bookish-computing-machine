@@ -63,7 +63,11 @@ class UserServiceTest {
     @Test
     void shouldIncreaseRequestCountNumberForExistingUser() {
         //given
-        User user = new User("test_user", 1);
+        User user = User.builder()
+                .login("test_user")
+                .request_count(1)
+                .build();
+
         UserProfileSnapshot userProfileSnapshot = createProfile();
         given(githubProvider.getUserInfo(LOGIN)).willReturn(userProfileSnapshot);
         given(userRepository.findByLogin(LOGIN)).willReturn(user);
@@ -80,7 +84,7 @@ class UserServiceTest {
 
 
     @Test
-    void shouldSaveRequestCountForNonExistingUser() throws UserNotFoundException{
+    void shouldSaveRequestCountForNonExistingUser() throws UserNotFoundException {
         //given
         given(userRepository.findByLogin(LOGIN)).willReturn(null);
 
@@ -88,9 +92,12 @@ class UserServiceTest {
         userService.increaseRequestCount(LOGIN);
 
         //then
-        then(userRepository).should().saveAndFlush(new User(LOGIN, 1));
+        then(userRepository).should().saveAndFlush(
+                User.builder()
+                        .login(LOGIN)
+                        .request_count(1)
+                        .build());
     }
-
 
 
     private UserProfileSnapshot createProfile() {

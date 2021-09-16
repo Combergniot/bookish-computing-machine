@@ -55,7 +55,11 @@ class UserService {
             user.modifyRequest_count(requestCount + 1);
             userRepository.saveAndFlush(user);
         } else {
-            userRepository.saveAndFlush(new User(login, 1));
+            userRepository.saveAndFlush(
+                    User.builder()
+                            .login(login)
+                            .request_count(1)
+                            .build());
         }
     }
 }
